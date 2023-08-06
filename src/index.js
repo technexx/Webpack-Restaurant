@@ -1,3 +1,4 @@
+import './style.css';
 import _ from './mainLayout.js';
 
 const content = document.getElementsByClassName("content")
