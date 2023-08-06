@@ -1,9 +1,34 @@
 const content = document.querySelector(".content")
 
-const headerDiv = document.createElement("div")
-headerDiv.classList.add("header")
+createMenu()
+createHeader()
 
-content.appendChild(headerDiv)
+function createMenu() {
+    const menuDiv = document.createElement("div")
+    menuDiv.classList.add("menu")
+    
+    content.appendChild(menuDiv)
+    
+    const menu = document.querySelector(".menu")
+    const itemOne = document.createElement("p")
+    const itemTwo = document.createElement("p")
+    const itemThree = document.createElement("p")
 
-const header = document.querySelector(".header")
-header.innerText = "Boo"
+    itemOne.innerText = "Home"
+    itemTwo.innerText = "Menu"
+    itemThree.innerText = "Contact"
+
+    menu.appendChild(itemOne)
+    menu.appendChild(itemTwo)
+    menu.appendChild(itemThree)
+}
+
+function createHeader() {
+    const headerDiv = document.createElement("div")
+    headerDiv.classList.add("header")
+    
+    content.appendChild(headerDiv)
+    
+    const header = document.querySelector(".header")
+    header.innerText = "Cantibal's Slurry Feed Boat"
+}
