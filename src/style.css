@@ -1,8 +1,21 @@
+*{
+    font-family: "Roboto";
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .menu {
     display: flex;
     justify-content: center;
     column-gap: 40px;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .header {
@@ -18,9 +31,23 @@
 
 .intro {
     font-size: 20px;
-    font-family: "Roboto";
     border: 3px solid black;
     margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+.hours {
+    text-align: center;    
+    margin-top: 20px;
+}
+
+.hours #day-1-hours {
+    margin-top: 10px;
 }
 
 @font-face {

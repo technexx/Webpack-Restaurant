@@ -8,7 +8,6 @@ createHours()
 function createMenu() {
     const div = document.createElement("div")
     div.classList.add("menu")
-    
     content.appendChild(div)
     
     const menu = document.querySelector(".menu")
@@ -28,7 +27,6 @@ function createMenu() {
 function createHeader() {
     const div = document.createElement("div")
     div.classList.add("header")
-    
     content.appendChild(div)
     
     const header = document.querySelector(".header")
@@ -38,7 +36,6 @@ function createHeader() {
 function createIntro() {
     const div = document.createElement("div")
     div.classList.add("intro")
-
     content.append(div)
 
     const parOne = document.createElement("p")
@@ -60,10 +57,10 @@ function createIntro() {
 function createHours() {
     const div = document.createElement("div")
     div.classList.add("hours")
-
     content.append(div)
 
     const hours = document.querySelector(".hours")
+    hours.innerText = "Hours"
 
     for (let i=0; i<7; i++) {
         const par = document.createElement("p")
@@ -73,7 +70,7 @@ function createHours() {
 
     const days = document.querySelectorAll(".hours > p")
 
-    days[0].innerText = "Monday: 10:00 p.m. - 2:30 a.m."
+    days[0].innerText = "Monday:10:00 p.m. - 2:30 a.m."
     days[1].innerText = "Tuesday: 10:00 p.m. - 2:30 a.m."
     days[2].innerText = "Wednesday: 6:00 p.m. - 5:00 a.m."
     days[3].innerText = "Thursday: 11:00 p.m. - 1:00 a.m."
