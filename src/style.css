@@ -15,3 +15,13 @@
     background-color: #e2e8f0;
     margin-top: 25px;
 }
+
+.intro {
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.ttf") format("woff2");
+}
