@@ -19,6 +19,8 @@
 .intro {
     font-size: 20px;
     font-family: "Roboto";
+    border: 3px solid black;
+    margin-top: 40px;
 }
 
 @font-face {
