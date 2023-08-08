@@ -1,10 +1,10 @@
 import './style.css';
-import _ from './mainLayout.js';
+import createMainPage from './mainLayout.js';
+import createMenu from './menuLayout.js'
 
-const content = document.getElementsByClassName("content")
-
-function testLoad() {
-    console.log("loaded!")
+function homePage() {
+    createMainPage
+    console.log("home")
 }
 
-testLoad()
+homePage()

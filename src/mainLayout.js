@@ -1,16 +1,21 @@
+export default function createMainPage() {
+    createNav()
+    createHeader()
+    createIntro()
+    createHours()
+    console.log("main import")
+}
+
 const content = document.querySelector(".content")
 
-createMenu()
-createHeader()
-createIntro()
-createHours()
+function createNav() {
+    console.log("main import")
 
-function createMenu() {
     const div = document.createElement("div")
-    div.classList.add("menu")
+    div.classList.add("nav")
     content.appendChild(div)
     
-    const menu = document.querySelector(".menu")
+    const nav = document.querySelector(".nav")
     const itemOne = document.createElement("p")
     const itemTwo = document.createElement("p")
     const itemThree = document.createElement("p")
@@ -19,9 +24,13 @@ function createMenu() {
     itemTwo.innerText = "Menu"
     itemThree.innerText = "Contact"
 
-    menu.appendChild(itemOne)
-    menu.appendChild(itemTwo)
-    menu.appendChild(itemThree)
+    itemOne.addEventListener("click", () => {
+        console.log("test")
+    })
+
+    nav.appendChild(itemOne)
+    nav.appendChild(itemTwo)
+    nav.appendChild(itemThree)
 }
 
 function createHeader() {

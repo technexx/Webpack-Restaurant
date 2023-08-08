@@ -10,12 +10,16 @@
     justify-content: center;
 }
 
-.menu {
+.nav {
     display: flex;
     justify-content: center;
     column-gap: 40px;
     font-size: 20px;
     margin-top: 10px;
+}
+
+.menu p:hover {
+    cursor: pointer;
 }
 
 .header {
