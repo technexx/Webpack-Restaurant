@@ -1,15 +1,13 @@
-export default function createMainPage() {
-    createNav()
+const content = document.querySelector(".content")
+
+export function createMainPage() {
     createHeader()
     createIntro()
     createHours()
     console.log("main import")
 }
 
-const content = document.querySelector(".content")
-
-function createNav() {
-
+export function createNav() {
     const div = document.createElement("div")
     div.classList.add("nav")
     content.appendChild(div)
