@@ -1,3 +1,7 @@
+export function test() {
+    console.log("blah")
+}
+
 export default function createMainPage() {
     createNav()
     createHeader()
