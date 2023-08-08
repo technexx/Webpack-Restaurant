@@ -16,7 +16,6 @@
     justify-content: center;
     padding: 2rem 1rem;
     background-color: #fee2e2;
-    /* background-color: var(--dark-red); */
     border: 1rem solid var(--red-orange);
     border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, var(--red-orange) 6px, var(--red-orange) 15px, transparent 16px, transparent 20px) 20/1rem;
 }
@@ -24,9 +23,27 @@
 .nav {
     display: flex;
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 60px;
     font-size: 20px;
     margin-top: 10px;
+
+    background: #fff;
+    font-family: Montserrat, sans-serif;;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #991b1b;
+    padding: 40px;
+    box-shadow:
+      inset #450a0a 0 0 0 5px, 
+      inset #7f1d1d 0 0 0 1px, 
+      inset #991b1b 0 0 0 10px, 
+      inset #b91c1c 0 0 0 11px, 
+      inset #dc2626 0 0 0 16px, 
+      inset #ef4444 0 0 0 17px, 
+      inset #f87171 0 0 0 21px, 
+      inset #fca5a5 0 0 0 22px;
+    text-shadow: 3px 3px 1px #fecaca;
 }
 
 .nav p:hover {
@@ -38,9 +55,9 @@
     justify-content: center;
     text-align: center;
     font-size: 50px;
+    font-weight: bold;
     color: #450a0a;
     border: 3px solid blue;
-    /* background-color: #e2e8f0; */
     margin-top: 25px;
 }
 

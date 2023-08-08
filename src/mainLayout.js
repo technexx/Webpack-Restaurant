@@ -8,6 +8,7 @@ export function createMainPage() {
     createHeader()
     createIntro()
     createHours()
+    createAddress()
 }
 
 export function createNav() {
@@ -76,11 +77,35 @@ function createHours() {
 
     const days = document.querySelectorAll(".hours > p")
 
-    days[0].innerText = "Monday:10:00 p.m. - 2:30 a.m."
+    days[0].innerText = "Monday: 10:00 p.m. - 2:30 a.m."
     days[1].innerText = "Tuesday: 10:00 p.m. - 2:30 a.m."
     days[2].innerText = "Wednesday: 6:00 p.m. - 5:00 a.m."
     days[3].innerText = "Thursday: 11:00 p.m. - 1:00 a.m."
     days[4].innerText = "Friday: 12:00 a.m. - 12:30 a.m."
     days[5].innerText = "Saturday: 12:15 a.m. - 12:20 a.m."
     days[6].innerText = "Sunday: 5:00 a.m. - 5:00 p.m."
+}
+
+function createAddress() {
+    const div = document.createElement("div")
+    div.classList.add("address")
+    mainBody.append(div)
+
+    const address = document.querySelector(".address")
+
+    const header = document.createElement("p")
+    const bodyOne = document.createElement("p")
+    const bodyTwo = document.createElement("p")
+
+    address.appendChild(header)
+    address.appendChild(bodyOne)
+    address.appendChild(bodyTwo)
+
+    header.setAttribute("id", "address-header")
+    bodyOne.setAttribute("id", "address-body-one")
+    bodyOne.setAttribute("id", "address-body-two")
+
+    header.innerText = "Address:"
+    bodyOne.innerText = "505 Herp Drive"
+    bodyTwo.innerText =  "Magnum County, EZT 97134-029-82142-92X"
 }
