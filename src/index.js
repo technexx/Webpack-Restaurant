@@ -2,7 +2,8 @@ import './style.css';
 import {createNav} from './mainLayout.js';
 import {createMainPage} from './mainLayout.js';
 import {clearBody} from './mainLayout.js';
-import createMenu from './menuLayout.js'
+import {createMenu} from './menuLayout.js';
+import {createContact} from './contactLayout';
 
 createNav()
 createMainPage()
@@ -22,5 +23,6 @@ tabTwo.addEventListener("click", () => {
 })
 
 tabThree.addEventListener("click", () => {
-
+    clearBody()
+    createContact()
 })

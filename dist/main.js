@@ -120,13 +120,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/contactLayout.js":
+/*!******************************!*\
+  !*** ./src/contactLayout.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createContact: () => (/* binding */ createContact)\n/* harmony export */ });\nconst mainBody = document.querySelector(\".main-body\")\r\n\r\nfunction createContact() {\r\n    const div = document.createElement(\"div\")\r\n    div.classList.add(\"contact\")\r\n    mainBody.appendChild(div)\r\n\r\n    const menu = document.querySelector(\".contact\")\r\n    menu.innerText = \"Contact Page\"\r\n}\n\n//# sourceURL=webpack://webpack-restaurant/./src/contactLayout.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _mainLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mainLayout.js */ \"./src/mainLayout.js\");\n/* harmony import */ var _menuLayout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menuLayout.js */ \"./src/menuLayout.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.createNav)()\r\n;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.createMainPage)()\r\n\r\nconst tabOne = document.querySelector(\"#home-tab\")\r\nconst tabTwo = document.querySelector(\"#menu-tab\")\r\nconst tabThree = document.querySelector(\"#contact-tab\")\r\n\r\ntabOne.addEventListener(\"click\", () => {\r\n    ;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.clearBody)()\r\n    ;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.createMainPage)()\r\n})\r\n\r\ntabTwo.addEventListener(\"click\", () => {\r\n    ;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.clearBody)()\r\n    ;(0,_menuLayout_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()\r\n})\r\n\r\ntabThree.addEventListener(\"click\", () => {\r\n\r\n})\n\n//# sourceURL=webpack://webpack-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _mainLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mainLayout.js */ \"./src/mainLayout.js\");\n/* harmony import */ var _menuLayout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menuLayout.js */ \"./src/menuLayout.js\");\n/* harmony import */ var _contactLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contactLayout */ \"./src/contactLayout.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.createNav)()\r\n;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.createMainPage)()\r\n\r\nconst tabOne = document.querySelector(\"#home-tab\")\r\nconst tabTwo = document.querySelector(\"#menu-tab\")\r\nconst tabThree = document.querySelector(\"#contact-tab\")\r\n\r\ntabOne.addEventListener(\"click\", () => {\r\n    ;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.clearBody)()\r\n    ;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.createMainPage)()\r\n})\r\n\r\ntabTwo.addEventListener(\"click\", () => {\r\n    ;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.clearBody)()\r\n    ;(0,_menuLayout_js__WEBPACK_IMPORTED_MODULE_2__.createMenu)()\r\n})\r\n\r\ntabThree.addEventListener(\"click\", () => {\r\n    ;(0,_mainLayout_js__WEBPACK_IMPORTED_MODULE_1__.clearBody)()\r\n    ;(0,_contactLayout__WEBPACK_IMPORTED_MODULE_3__.createContact)()\r\n})\n\n//# sourceURL=webpack://webpack-restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -146,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenu)\n/* harmony export */ });\nconst content = document.querySelector(\".content\")\r\n\r\nfunction createMenu() {\r\n    const div = document.createElement(\"div\")\r\n    div.classList.add(\"menu\")\r\n    content.appendChild(div)\r\n\r\n    const menu = document.querySelector(\".menu\")\r\n    menu.innerText = \"Test Menu\"\r\n\r\n    console.log(\"imported from menu!\")\r\n}\n\n//# sourceURL=webpack://webpack-restaurant/./src/menuLayout.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createMenu: () => (/* binding */ createMenu)\n/* harmony export */ });\nconst mainBody = document.querySelector(\".main-body\")\r\n\r\nfunction createMenu() {\r\n    const div = document.createElement(\"div\")\r\n    div.classList.add(\"menu\")\r\n    mainBody.appendChild(div)\r\n\r\n    const menu = document.querySelector(\".menu\")\r\n    menu.innerText = \"Menu\"\r\n\r\n    console.log(\"imported from menu!\")\r\n}\n\n//# sourceURL=webpack://webpack-restaurant/./src/menuLayout.js?");
 
 /***/ }),
 

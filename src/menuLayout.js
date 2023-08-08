@@ -1,12 +1,12 @@
-const content = document.querySelector(".content")
+const mainBody = document.querySelector(".main-body")
 
-export default function createMenu() {
+export function createMenu() {
     const div = document.createElement("div")
     div.classList.add("menu")
-    content.appendChild(div)
+    mainBody.appendChild(div)
 
     const menu = document.querySelector(".menu")
-    menu.innerText = "Test Menu"
+    menu.innerText = "Menu"
 
     console.log("imported from menu!")
 }
