@@ -1,18 +1,18 @@
-const content = document.querySelector(".content")
+const mainBody = document.querySelector(".main-body")
+
+export function clearBody() {
+    mainBody.innerHTML = ""
+}
 
 export function createMainPage() {
     createHeader()
     createIntro()
     createHours()
-    console.log("main import")
 }
 
 export function createNav() {
-    const div = document.createElement("div")
-    div.classList.add("nav")
-    content.appendChild(div)
-    
     const nav = document.querySelector(".nav")
+    
     const itemOne = document.createElement("p")
     const itemTwo = document.createElement("p")
     const itemThree = document.createElement("p")
@@ -25,10 +25,6 @@ export function createNav() {
     itemTwo.innerText = "Menu"
     itemThree.innerText = "Contact"
 
-    itemOne.addEventListener("click", () => {
-        console.log("test")
-    })
-
     nav.appendChild(itemOne)
     nav.appendChild(itemTwo)
     nav.appendChild(itemThree)
@@ -37,7 +33,7 @@ export function createNav() {
 function createHeader() {
     const div = document.createElement("div")
     div.classList.add("header")
-    content.appendChild(div)
+    mainBody.appendChild(div)
     
     const header = document.querySelector(".header")
     header.innerText = "Cantibal's Feed Boat and Slurry House"
@@ -46,7 +42,7 @@ function createHeader() {
 function createIntro() {
     const div = document.createElement("div")
     div.classList.add("intro")
-    content.append(div)
+    mainBody.append(div)
 
     const parOne = document.createElement("p")
     const parTwo = document.createElement("p")
@@ -67,7 +63,7 @@ function createIntro() {
 function createHours() {
     const div = document.createElement("div")
     div.classList.add("hours")
-    content.append(div)
+    mainBody.append(div)
 
     const hours = document.querySelector(".hours")
     hours.innerText = "Hours"

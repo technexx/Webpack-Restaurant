@@ -1,6 +1,7 @@
 import './style.css';
-import {createMainPage} from './mainLayout.js';
 import {createNav} from './mainLayout.js';
+import {createMainPage} from './mainLayout.js';
+import {clearBody} from './mainLayout.js';
 import createMenu from './menuLayout.js'
 
 createNav()
@@ -11,14 +12,12 @@ const tabTwo = document.querySelector("#menu-tab")
 const tabThree = document.querySelector("#contact-tab")
 
 tabOne.addEventListener("click", () => {
+    clearBody()
     createMainPage()
 })
 
 tabTwo.addEventListener("click", () => {
-    const header = document.querySelector(".header")
-    const intro = document.querySelector(".intro")
-    const hours = document.querySelector(".hours")
-    header.remove()
+    clearBody()
     createMenu()
 })
 
