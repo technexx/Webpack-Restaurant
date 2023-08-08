@@ -1,7 +1,3 @@
-export function test() {
-    console.log("blah")
-}
-
 export default function createMainPage() {
     createNav()
     createHeader()
@@ -13,7 +9,6 @@ export default function createMainPage() {
 const content = document.querySelector(".content")
 
 function createNav() {
-    console.log("main import")
 
     const div = document.createElement("div")
     div.classList.add("nav")
@@ -23,6 +18,10 @@ function createNav() {
     const itemOne = document.createElement("p")
     const itemTwo = document.createElement("p")
     const itemThree = document.createElement("p")
+
+    itemOne.setAttribute("id", "home-tab")
+    itemTwo.setAttribute("id", "menu-tab")
+    itemThree.setAttribute("id", "contact-tab")
 
     itemOne.innerText = "Home"
     itemTwo.innerText = "Menu"
@@ -90,6 +89,4 @@ function createHours() {
     days[4].innerText = "Friday: 12:00 a.m. - 12:30 a.m."
     days[5].innerText = "Saturday: 12:15 a.m. - 12:20 a.m."
     days[6].innerText = "Sunday: 5:00 a.m. - 5:00 p.m."
-
-    console.log(days[0])
 }
