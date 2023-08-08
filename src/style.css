@@ -1,4 +1,10 @@
+:root {
+    --dark-red: #7f1d1d;
+    --red-orange: #f87171
+}
+
 *{
+    box-sizing: border-box;
     font-family: "Roboto";
     margin: 0px;
     padding: 0px;
@@ -8,6 +14,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 1rem;
+    background-color: #fee2e2;
+    /* background-color: var(--dark-red); */
+    border: 1rem solid var(--red-orange);
+    border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, var(--red-orange) 6px, var(--red-orange) 15px, transparent 16px, transparent 20px) 20/1rem;
 }
 
 .nav {
@@ -27,7 +38,7 @@
     justify-content: center;
     text-align: center;
     font-size: 50px;
-    color: red;
+    color: #450a0a;
     border: 3px solid blue;
     /* background-color: #e2e8f0; */
     margin-top: 25px;
