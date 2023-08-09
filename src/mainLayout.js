@@ -67,7 +67,11 @@ function createHours() {
     mainBody.append(div)
 
     const hours = document.querySelector(".hours")
-    hours.innerText = "Hours"
+
+    const header = document.createElement("p")
+    header.setAttribute("id", "hours-header")
+    hours.appendChild(header)
+    header.innerText = "Hours"
 
     for (let i=0; i<7; i++) {
         const par = document.createElement("p")
@@ -77,13 +81,13 @@ function createHours() {
 
     const days = document.querySelectorAll(".hours > p")
 
-    days[0].innerText = "Monday: 10:00 p.m. - 2:30 a.m."
-    days[1].innerText = "Tuesday: 10:00 p.m. - 2:30 a.m."
-    days[2].innerText = "Wednesday: 6:00 p.m. - 5:00 a.m."
-    days[3].innerText = "Thursday: 11:00 p.m. - 1:00 a.m."
-    days[4].innerText = "Friday: 12:00 a.m. - 12:30 a.m."
-    days[5].innerText = "Saturday: 12:15 a.m. - 12:20 a.m."
-    days[6].innerText = "Sunday: 5:00 a.m. - 5:00 p.m."
+    days[1].innerText = "Monday: 10:00 p.m. - 2:30 a.m."
+    days[2].innerText = "Tuesday: 10:00 p.m. - 2:30 a.m."
+    days[3].innerText = "Wednesday: 6:00 p.m. - 5:00 a.m."
+    days[4].innerText = "Thursday: 11:00 p.m. - 1:00 a.m."
+    days[5].innerText = "Friday: 12:00 a.m. - 12:30 a.m."
+    days[6].innerText = "Saturday: 12:15 a.m. - 12:20 a.m."
+    days[7].innerText = "Sunday: 5:00 a.m. - 5:00 p.m."
 }
 
 function createAddress() {

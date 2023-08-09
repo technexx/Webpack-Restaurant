@@ -79,8 +79,22 @@
     margin-top: 20px;
 }
 
-.hours #day-1-hours {
-    margin-top: 10px;
+.hours #hours-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.address #address-header {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 @font-face {
