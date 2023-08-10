@@ -12,7 +12,7 @@ export function createMenu() {
     menuHeader.innerText = "Menu"
 
     const menuItemsDiv = document.createElement("div")
-    menuItemsDiv.classList.add("menu-items")
+    menuItemsDiv.classList.add("menu-items-holder")
 
     menu.appendChild(menuHeader)
     menu.appendChild(menuItemsDiv)
@@ -22,7 +22,7 @@ export function createMenu() {
     const itemThree = MenuItem("Liver tartare", "54.99", "Tender liver, finely minced and mixed with our Mystery Mayhem Mix, served on a bed of pre-digested greens")
     const itemFour = MenuItem("Eyeball Chowder", "$28.50", "20/30 minimum pre-expiration vision eyeballs served in original ocular cavity with mixed vegetables")
 
-    const menuItems = document.querySelector(".menu-items")
+    const menuItemsHolder = document.querySelector(".menu-items-holder")
     const menuItemsArray = [itemOne, itemTwo, itemThree, itemFour]
 
     for (let i=0; i<menuItemsArray.length; i++) {
@@ -37,9 +37,11 @@ export function createMenu() {
         descriptionPar.innerText = menuItemsArray[i].description
         pricePar.innerText = menuItemsArray[i].price
 
-        menuItems.appendChild(itemPar)
-        menuItems.appendChild(descriptionPar)
-        menuItems.appendChild(pricePar)
+        itemDiv.appendChild(itemPar)
+        itemDiv.appendChild(descriptionPar)
+        itemDiv.appendChild(pricePar)
+
+        menuItemsHolder.appendChild(itemDiv)
     }
 }
 
