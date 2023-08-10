@@ -11,8 +11,8 @@
 }
 
 .content {
-    overflow: auto;
     height: 100vh;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
@@ -105,7 +105,7 @@
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .menu-items-holder {
@@ -123,12 +123,45 @@
     width: 250px;
     font-size: 20px;
     padding: 10px;
+    border: white;
+    box-shadow: inset 0 0 10em red;
+    
+    -webkit-mask-image: linear-gradient(
+        to bottom right,
+        white,
+        white 50%,
+        transparent 50%,
+        transparent),
+      linear-gradient(
+        to top,
+        transparent 30px,
+        black 30px,
+        white);
+      mask-image: linear-gradient(
+        to bottom right,
+        white,
+        white 50%,
+        transparent 50%,
+        transparent),
+      linear-gradient(
+        to top,
+        transparent 30px,
+        black 30px,
+        white);
+      -webkit-mask-size: 30px 30px, 100% 100%;
+      mask-size: 30px 30px, 100% 100%;
+      -webkit-mask-repeat: repeat-x;
+      mask-repeat: repeat-x;
+      -webkit-mask-position: left bottom;
+      mask-position: left bottom;
+      display: block;
+      margin-bottom: 0.5em;
 }
 
 #menu-item-header {
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /*Auto top margin uses all empty space, and pushes element to bottom.*/
