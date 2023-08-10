@@ -18,19 +18,38 @@ export function createMenu() {
 
     menu.appendChild(menuItemsDiv)
 
+    addCategoryHeader("drinks-header", "Drinks")
+    addDrinks()
+    addCategoryHeader("appetizers-header", "Appetizers")
+    addAppetizers()
+    addCategoryHeader("mains-header", "Mains")
     addMains()
+}
+
+const addCategoryHeader = (headerId, headerText) => {
+    const menuItemsHolder = document.querySelector(".menu-items-holder")
+
+    const header = document.createElement("p")
+    header.setAttribute("id", headerId)
+    header.innerText = headerText
+
+    menuItemsHolder.appendChild(header)
 }
 
 function addDrinks() {
     const itemOne = MenuItem("Water", "1.00", "Straight from our self-fermenting tap. Free refills for survivors.")
-    const itemTwo = MenuItem("Slurry Juice", "$9.50 - $99.50", "Select expired entrees slushified for your gulping pleasure. See server for availability.")
-    const itemThree = MenuItem("Bloody Mary", "$42.00", "Straight from the vat. Host guaranteed to be 72 hours or less from expiration. *Host named post-partum, as live specimans are generally assigned numerical designations*.")
+    const itemTwo = MenuItem("Slurry Juice", "$9.50 - $99.50", "Select expired entrees slushified for your gulping pleasure. See and serenade server for options.")
+    const itemThree = MenuItem("Bloody Mary", "$42.00", "Straight from the vat-woman. Host guaranteed to be 72 hours or less from expiration. \n\n *Host named post-partum, as live specimans are generally assigned numerical designations.")
+
+    Dishes([itemOne, itemTwo, itemThree])
 }
 
 function addAppetizers() {
     const itemOne = MenuItem("Eyeball Chowder", "$28.50", "20/30 minimum pre-expiration vision eyeballs served in original ocular cavity with mixed vegetables.")
     const itemTwo = MenuItem("Slurry Crostini", "$18.90", "Freshly charred preserved artisan yeast dough topped with our (in)famous \"Cantibal's Slurry Spread.\"")
     const itemThree = MenuItem("Tosser's Salad", "$26.26", "Eco-friendly recycled algae and friends with lyme, gravel, shingles, and our award-winning* Guck-a-Shuck dressing")
+
+    Dishes([itemOne, itemTwo, itemThree])
 }
 
 function addMains() {
@@ -38,8 +57,7 @@ function addMains() {
     const itemTwo = MenuItem("Tongue Pâté", "$66.92", "Vat-organic certified, gluten-free tongue minced with vegetables, marinated with our signature house Slag Sauce, and served with Dutch bread.")
     const itemThree = MenuItem("Liver tartare", "$54.99", "Tender liver, finely minced and mixed with our Mystery Mayhem Mix, served on a bed of pre-digested greens.")
 
-    Dishes([itemOne, itemTwo, itemThree, itemFour])
-
+    Dishes([itemOne, itemTwo, itemThree])
 }
 
 const Dishes = (arrayOfMenuObjects) => {
