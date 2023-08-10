@@ -9,7 +9,7 @@ export function createMenu() {
 
     const menuHeader = document.createElement("p")
     menuHeader.setAttribute("id", "menu-header")
-    menuHeader.innerText = "Menu"
+    menuHeader.innerText = "Served All Day and Night, Excluding Quarantines and Raids"
 
     const menuItemsDiv = document.createElement("div")
     menuItemsDiv.classList.add("menu-items-holder")
@@ -29,17 +29,21 @@ export function createMenu() {
         const itemDiv = document.createElement("div")
         itemDiv.classList.add("menu-item")
 
-        const itemPar = document.createElement("p")
-        const descriptionPar = document.createElement("p")
-        const pricePar = document.createElement("p")
+        const item = document.createElement("p")
+        const description = document.createElement("p")
+        const price = document.createElement("p")
 
-        itemPar.innerText = menuItemsArray[i].item
-        descriptionPar.innerText = menuItemsArray[i].description
-        pricePar.innerText = menuItemsArray[i].price
+        item.setAttribute("id", "menu-item-header")
+        description.setAttribute("id", "menu-item-description")
+        price.setAttribute("id", "menu-item-price")
 
-        itemDiv.appendChild(itemPar)
-        itemDiv.appendChild(descriptionPar)
-        itemDiv.appendChild(pricePar)
+        item.innerText = menuItemsArray[i].item
+        description.innerText = menuItemsArray[i].description
+        price.innerText = menuItemsArray[i].price
+
+        itemDiv.appendChild(item)
+        itemDiv.appendChild(description)
+        itemDiv.appendChild(price)
 
         menuItemsHolder.appendChild(itemDiv)
     }
