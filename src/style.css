@@ -208,6 +208,10 @@
     align-items: center;
 }
 
+.contact .container-holder * {
+    border: 2px solid black;
+}
+
 #contact-header {
     font-size: 36px;
     font-weight: bold;

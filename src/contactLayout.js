@@ -28,15 +28,23 @@ const createPar = (idAttribute) => {
 function contactBody() {
     const contact = document.querySelector(".contact")
 
+    const containerDiv = document.createElement("div")
     const divOne = document.createElement("div")
     const divTwo = document.createElement("div")
     const divThree = document.createElement("div")
     const divFour = document.createElement("div")
 
-    contact.appendChild(divOne)
-    contact.appendChild(divTwo)
-    contact.appendChild(divThree)
-    contact.appendChild(divFour)
+    containerDiv.classList.add("container-holder")
+
+    contact.appendChild(containerDiv)
+
+    const containerHolder = document.querySelector(".container-holder")
+
+
+    containerHolder.appendChild(divOne)
+    containerHolder.appendChild(divTwo)
+    containerHolder.appendChild(divThree)
+    containerHolder.appendChild(divFour)
 
     divOne.classList.add("section-one-container")
     divTwo.classList.add("section-two-container")
