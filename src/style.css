@@ -22,8 +22,6 @@
     border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, var(--red-orange) 6px, var(--red-orange) 15px, transparent 16px, transparent 20px) 20/1rem;
 }
 
-/*This prevents resizing + creates scroll. Don't want it like sign up form where resizes to pct, but rather stays the same unless sized too small.*/
-/*May want as a single grid space that is auto-sized*/
 .main-body {
     border: solid 10px black;
     width: min(80vw, 1000px);
