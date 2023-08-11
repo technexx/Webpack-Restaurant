@@ -6,6 +6,7 @@ export function createContact() {
     mainBody.appendChild(div)
 
     contactHeader()
+    contactBody()
 }
 
 function contactHeader() {
@@ -18,22 +19,39 @@ function contactHeader() {
     contact.appendChild(contactHeader)
 }
 
+const createPar = (idAttribute) => {
+    const par = document.createElement("p")
+    par.setAttribute("id", idAttribute)
+    return par
+}
+
 function contactBody() {
     const contact = document.querySelector(".contact")
 
-    const sectionOneHeader = document.createElement("p")
-    const sectionTwoHeader = document.createElement("p")
-    const sectionThreeHeader = document.createElement("p")
-    const sectionFourHeader = document.createElement("p")
+    const sectionOneHeader = createPar("contact-section-one-header")
+    const sectionOne = createPar("contact-section-one")
 
-    sectionOneHeader.setAttribute("id", "contact-section-one-header")
-    sectionTwoHeader.setAttribute("id", "contact-section-two-header")
-    sectionThreeHeader.setAttribute("id", "contact-section-three-header")
-    sectionFourHeader.setAttribute("id", "contact-section-four-header")
+    const sectionTwoHeader = createPar("contact-section-two-header")
+    const sectionTwo = createPar("contact-section-two")
+
+    const sectionThreeHeader = createPar("contact-section-three-header")
+    const sectionThree = createPar("contact-section-three")
+
+    const sectionFourHeader = createPar("contact-section-four-header")
+    const sectionFour = createPar("contact-section-four")
 
     sectionOneHeader.innerText = "General Inquiries"
     sectionTwoHeader.innerText = "Health and Safety Concerns"
     sectionThreeHeader.innerText = "Poison Control Referrals"
     sectionFourHeader.innerText = "Charity"
+
+    contact.appendChild(sectionOneHeader)
+    contact.appendChild(sectionOne)
+    contact.appendChild(sectionTwoHeader)
+    contact.appendChild(sectionTwo)
+    contact.appendChild(sectionThreeHeader)
+    contact.appendChild(sectionThree)
+    contact.appendChild(sectionFourHeader)
+    contact.appendChild(sectionFour)
 
 }
