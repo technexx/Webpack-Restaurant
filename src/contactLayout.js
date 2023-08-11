@@ -28,6 +28,26 @@ const createPar = (idAttribute) => {
 function contactBody() {
     const contact = document.querySelector(".contact")
 
+    const divOne = document.createElement("div")
+    const divTwo = document.createElement("div")
+    const divThree = document.createElement("div")
+    const divFour = document.createElement("div")
+
+    contact.appendChild(divOne)
+    contact.appendChild(divTwo)
+    contact.appendChild(divThree)
+    contact.appendChild(divFour)
+
+    divOne.classList.add("section-one-container")
+    divTwo.classList.add("section-two-container")
+    divThree.classList.add("section-three-container")
+    divFour.classList.add("section-four-container")
+
+    const sectionOneContainer = document.querySelector(".section-one-container")
+    const sectionTwoContainer = document.querySelector(".section-two-container")
+    const sectionThreeContainer = document.querySelector(".section-three-container")
+    const sectionFourContainer = document.querySelector(".section-four-container")
+
     const sectionOneHeader = createPar("contact-section-one-header")
     const sectionOne = createPar("contact-section-one")
 
@@ -45,13 +65,13 @@ function contactBody() {
     sectionThreeHeader.innerText = "Poison Control Referrals"
     sectionFourHeader.innerText = "Charity"
 
-    contact.appendChild(sectionOneHeader)
-    contact.appendChild(sectionOne)
-    contact.appendChild(sectionTwoHeader)
-    contact.appendChild(sectionTwo)
-    contact.appendChild(sectionThreeHeader)
-    contact.appendChild(sectionThree)
-    contact.appendChild(sectionFourHeader)
-    contact.appendChild(sectionFour)
+    sectionOneContainer.appendChild(sectionOneHeader)
+    sectionOneContainer.appendChild(sectionOne)
+    sectionTwoContainer.appendChild(sectionTwoHeader)
+    sectionTwoContainer.appendChild(sectionTwo)
+    sectionThreeContainer.appendChild(sectionThreeHeader)
+    sectionThreeContainer.appendChild(sectionThree)
+    sectionFourContainer.appendChild(sectionFourHeader)
+    sectionFourContainer.appendChild(sectionFour)
 
 }
