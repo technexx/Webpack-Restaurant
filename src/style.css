@@ -1,6 +1,7 @@
 :root {
     --dark-red: #7f1d1d;
-    --red-orange: #f87171
+    --red-orange: #f87171;
+    --blueish: #93c5fd
 }
 
 *{
@@ -18,12 +19,13 @@
     align-items: center;
     padding: 2rem 1rem;
     background-color: #fee2e2;
-    border: 1rem solid var(--red-orange);
-    border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, var(--red-orange) 6px, var(--red-orange) 15px, transparent 16px, transparent 20px) 20/1rem;
+    /* border: 1rem solid var(--red-orange);
+    border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, var(--red-orange) 6px, var(--red-orange) 15px, transparent 16px, transparent 20px) 20/1rem; */
 }
 
 .main-body {
     border: solid 10px black;
+    background-color: #fef9c3;
     width: min(80vw, 1000px);
     padding: 20px 100px 20px 100px;
     margin-top: 20px;
@@ -52,7 +54,6 @@
     inset #ef4444 0 0 0 8px, 
     inset #f87171 0 0 0 10px, 
     inset #fca5a5 0 0 0 10px;
-  text-shadow: 3px 3px 1px #fecaca;
   padding: 25px
 }
 
@@ -185,8 +186,6 @@
       mask-repeat: repeat-x;
       -webkit-mask-position: left bottom;
       mask-position: left bottom;
-      /* display: block; */      
-      /* margin-bottom: 0.5em; */
 }
 
 #menu-item-header {
@@ -211,14 +210,16 @@
 .container-holder {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
+/*All section containers*/
 .container-holder > div {
+    text-align: center;
     height: 250px;
     border: 2px solid black;
     font-size: 28px;
     margin-bottom: 100px;
+    padding: 10px
 }
 
 #contact-header {

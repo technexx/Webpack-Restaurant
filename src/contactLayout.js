@@ -72,10 +72,10 @@ function contactBody() {
     sectionThreeHeader.innerText = "Poison Control Referrals"
     sectionFourHeader.innerText = "Charity"
 
-    sectionOne.innerText = "Miff Stabson\nGeneral Manager and Lead Slurrifier\nStab.Dat.Azz@CantibalsCan.org"
-    sectionTwo.innerText = "Jack Meoff\nLegally Required Bureaucratic Grunt\nJacksFlamingAppendix@CantibalsCan.org"
-    sectionThree.innerText = "Overworked Dispatch Operator\nMeddling Government Building Somewhere\n9-1-1"
-    sectionFour.innerText = "Matt Schatt\nPublic Relations Guy\nHelpI'mAliveAndThisBurns@CantibalsCan.org"
+    sectionOne.innerText = "Miff Stabson\n\nGeneral Manager and Lead Slurrifier\n\nStab.Dat.Azz@CantibalsCan.org"
+    sectionTwo.innerText = "Jack Meoff\n\nLegally Required Bureaucratic Grunt\n\nJacksFlamingAppendix@CantibalsCan.org"
+    sectionThree.innerText = "Overworked Dispatch Operator\n\nMeddling Government Building Somewhere\n\n9-1-1"
+    sectionFour.innerText = "Matt Schatt\n\nPublic Relations Guy\n\nHelpI'mAliveAndThisBurns@CantibalsCan.org"
 
     sectionOneContainer.appendChild(sectionOneHeader)
     sectionOneContainer.appendChild(sectionOne)
