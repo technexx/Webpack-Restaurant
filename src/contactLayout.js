@@ -40,7 +40,6 @@ function contactBody() {
 
     const containerHolder = document.querySelector(".container-holder")
 
-
     containerHolder.appendChild(divOne)
     containerHolder.appendChild(divTwo)
     containerHolder.appendChild(divThree)
@@ -73,6 +72,11 @@ function contactBody() {
     sectionThreeHeader.innerText = "Poison Control Referrals"
     sectionFourHeader.innerText = "Charity"
 
+    sectionOne.innerText = "Miff Stabson\nGeneral Manager and Lead Slurrifier\nStab.Dat.Azz@CantibalsCan.org"
+    sectionTwo.innerText = "Jack Meoff\nLegally Required Bureaucratic Grunt\nJacksFlamingAppendix@CantibalsCan.org"
+    sectionThree.innerText = "Overworked Dispatch Operator\nMeddling Government Building Somewhere\n9-1-1"
+    sectionFour.innerText = "Matt Schatt\nPublic Relations Guy\nHelpI'mAliveAndThisBurns@CantibalsCan.org"
+
     sectionOneContainer.appendChild(sectionOneHeader)
     sectionOneContainer.appendChild(sectionOne)
     sectionTwoContainer.appendChild(sectionTwoHeader)
@@ -81,5 +85,4 @@ function contactBody() {
     sectionThreeContainer.appendChild(sectionThree)
     sectionFourContainer.appendChild(sectionFourHeader)
     sectionFourContainer.appendChild(sectionFour)
-
 }

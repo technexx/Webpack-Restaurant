@@ -208,8 +208,17 @@
     align-items: center;
 }
 
-.contact .container-holder * {
+.container-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-holder > div {
+    height: 250px;
     border: 2px solid black;
+    font-size: 28px;
+    margin-bottom: 100px;
 }
 
 #contact-header {
@@ -219,8 +228,12 @@
 }
 
 #contact-section-one-header, #contact-section-two-header, #contact-section-three-header, #contact-section-four-header {
-    font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+} 
+
+#contact-section-one, #contact-section-two, #contact-section-three, #contact-section-four {
+    font-size: 20px;
 }
 
 @font-face {
