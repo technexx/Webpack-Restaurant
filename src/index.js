@@ -13,20 +13,33 @@ const tabTwo = document.querySelector("#menu-tab")
 const tabThree = document.querySelector("#contact-tab")
 
 //"Home" folder is /dist since that is where our main.js file is generated.
-tabOne.style.backgroundImage = "url(../src/bloody.png)"
-// tabOne.style.backgroundSize = "300px 300px"
 
 tabOne.addEventListener("click", () => {
     clearBody()
     createMainPage()
+    clearTabBackgrounds()
+    tabOne.style.backgroundImage = "url(../src/bloody.png)"
+
 })
 
 tabTwo.addEventListener("click", () => {
     clearBody()
     createMenu()
+    clearTabBackgrounds()
+    tabTwo.style.backgroundImage = "url(../src/bloody.png)"
+
 })
 
 tabThree.addEventListener("click", () => {
     clearBody()
     createContact()
+    clearTabBackgrounds()
+    tabThree.style.backgroundImage = "url(../src/bloody.png)"
+
 })
+
+function clearTabBackgrounds() {
+    tabOne.style.backgroundImage = "url()"
+    tabTwo.style.backgroundImage = "url()"
+    tabThree.style.backgroundImage = "url()"
+}

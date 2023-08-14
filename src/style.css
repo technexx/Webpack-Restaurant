@@ -11,9 +11,41 @@
     padding: 0px;
 }
 
-#home-tab {
+.content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(135deg,#fff 12px,
+      transparent 0%), linear-gradient(-135deg,#fff 12px,
+      transparent 0%);
+    background-size: 30px;
+  }
+    .content::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(45deg,#fff 12px,
+      transparent 0%), linear-gradient(-45deg,#fff 12px,
+      transparent 0%);
+    background-size: 30px;
+  }
+
+.nav > p {
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#home-tab{
+
 }
 
 .content {
