@@ -11,6 +11,11 @@
     padding: 0px;
 }
 
+#home-tab {
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
 .content {
     height: 100vh;
     overflow: auto;
