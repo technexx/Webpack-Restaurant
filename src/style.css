@@ -36,16 +36,29 @@
     background-size: 30px;
   }
 
+  .nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;;
+    margin-top: 10px;
+    background: #fff;
+    font-weight: bold;
+    color: #991b1b;
+    padding: 40px;
+}
+
+.nav p:hover {
+    cursor: pointer;
+}
+
 .nav > p {
-    background-size: cover;
+    background-size: 60px;
     background-repeat: no-repeat;
     background-position: 50% 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-#home-tab{
-
 }
 
 .content {
@@ -92,24 +105,6 @@
     inset #f87171 0 0 0 10px, 
     inset #fca5a5 0 0 0 10px;
   padding: 25px
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    column-gap: 60px;
-    font-size: 24px;
-    font-family: Montserrat, sans-serif;;
-    margin-top: 10px;
-    background: #fff;
-    font-weight: bold;
-    color: #991b1b;
-
-    padding: 40px;
-}
-
-.nav p:hover {
-    cursor: pointer;
 }
 
 .header {

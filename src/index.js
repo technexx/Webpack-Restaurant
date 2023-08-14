@@ -12,6 +12,8 @@ const tabOne = document.querySelector("#home-tab")
 const tabTwo = document.querySelector("#menu-tab")
 const tabThree = document.querySelector("#contact-tab")
 
+tabOne.style.backgroundImage = "url(../src/bloody.png)"
+
 //"Home" folder is /dist since that is where our main.js file is generated.
 
 tabOne.addEventListener("click", () => {
