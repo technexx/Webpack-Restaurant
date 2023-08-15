@@ -20,7 +20,7 @@ tabOne.addEventListener("click", () => {
     clearBody()
     createMainPage()
     clearTabBackgrounds()
-    tabOne.style.backgroundImage = "url(../src/bloody.png)"
+    tabOne.style.backgroundImage = "url(../src/images/bloody.png)"
 
 })
 
@@ -28,7 +28,7 @@ tabTwo.addEventListener("click", () => {
     clearBody()
     createMenu()
     clearTabBackgrounds()
-    tabTwo.style.backgroundImage = "url(../src/bloody.png)"
+    tabTwo.style.backgroundImage = "url(../src/images/bloody.png)"
 
 })
 
@@ -36,7 +36,7 @@ tabThree.addEventListener("click", () => {
     clearBody()
     createContact()
     clearTabBackgrounds()
-    tabThree.style.backgroundImage = "url(../src/bloody.png)"
+    tabThree.style.backgroundImage = "url(../src/images/bloody.png)"
 
 })
 
